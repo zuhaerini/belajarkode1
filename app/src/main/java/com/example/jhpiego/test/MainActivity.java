@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
                 double luas = p*l;
 
-                txtLuas.setText("Luas Persegi Panjang "+luas);
+                txtLuas.setText("Luas Persegi Panjang adalah "+luas);
 
             }
         });
