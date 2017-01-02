@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
     private EditText edPanjang, edLebar;
     private Button btnHitung;
     private TextView txtLuas;
@@ -25,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
 
         btnHitung.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                String Panjang = edPanjang.getText().toString().trim();
-                String Lebar = edLebar.getText().toString().trim();
+            public void onClick(View view) {
+                String panjang=edPanjang.getText().toString().trim();
+                String lebar=edLebar.getText().toString().trim();
 
-                double p = Double.parseDouble(Panjang);
-                double l = Double.parseDouble(Lebar);
+                double p=Double.parseDouble(panjang);
+                double l=Double.parseDouble(lebar);
 
-                double luas = p*l;
+                double luas=p*l;
 
                 txtLuas.setText("Luas Persegi Panjang adalah "+luas);
 
